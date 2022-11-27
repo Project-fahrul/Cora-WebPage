@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cora Digital Indonesia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #18729F;
+            --secondary-color: #DEE7F0;
+        }
+
+        html {
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+    </style>
+    <style>
+        .navbar {
+            justify-content: flex-end;
+        }
+
+        .navbar-container {
+            background-color: transparent;
+        }
+
+        .nav-link {
+            color: var(--primary-color);
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin: 0 8px;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .navbar-nav .nav-link.active {
+            color: var(--primary-color);
+            font-weight: 600;
+            position: relative;
+        }
+
+        .navbar-nav .nav-link.active::after,
+        .navbar-nav .nav-link.active::before {
+            position: absolute;
+            content: " ";
+            height: 3px;
+            background-color: var(--primary-color);
+            width: 50%;
+            bottom: 0;
+        }
+
+        .navbar-nav .nav-link.active::before {
+            left: 50%;
+        }
+
+        .navbar-nav .nav-link.active::after {
+            right: 50%;
+        }
+
+        .navbar-wrapper {
+            position: fixed;
+            width: 100vw;
+            z-index: 200;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Logo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Feature 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Feature 2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="banner-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-6" style="display: flex; flex-direction: column; justify-content: center;">
+                    <h1 class="banner-title">Let's Get Digital.</h1>
+                    <p class="banner-desc">Creating remarkable things with cora digital agency.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="col-6" style="height: 600px;"></div>
+            </div>
+        </div>
+    </div>
+    <section class="section-old">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <ul class="section-list">
+                <li>Website Development</li>
+                <li>Mobile Apps Development</li>
+                <li>Graphic Design</li>
+                <li>Content Creation</li>
+                <li>Social Media Management</li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-even">
+        <div class="container">
+            <h2 class="section-title-2">We Offer</h2>
+            <p class="section-desc">Choose from our afforable and customizable services packages.</p>
+            <div class="row g-4 section-items">
+                <div class="col-4">
+                    <div class="section-item">
+                        <h3 class="item-title">Web Development</h3>
+                        <p>Tingkatkan kredibilitas bisnis Anda dengan website yang menawan. Serahkan project website
+                            Anda kepada ahlinya, tanpa repot & langsung mendatangkan calon klien potensial Anda.</p>
+                        <ul>
+                            <li>Didesain Khusus Sesuai Brand</li>
+                            <li>Gratis Hosting & Domain</li>
+                            <li>File master lengkap & resolusi tinggi</li>
+                        </ul>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="section-item">
+                        <h3 class="item-title">Mobile Apps Development</h3>
+                        <p>Pengembangan aplikasi seluler yang mudah digunakan membantu berbagai startup dan perusahaan
+                            untuk mendefinisikan kembali pengalaman pengguna seluler.</p>
+                        <ul>
+                            <li>Pengembangan Aplikasi Native iOS dan Native Android.</li>
+                            <li>Desain UI / UX untuk alur dan pengalaman pengguna yang lengkap</li>
+                            <li>Integrasi dengan layanan pihak ketiga, mis. Google Maps, gateway pembayaran, platform
+                                sosial, dan layanan lainnya melalui API.</li>
+                        </ul>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="section-item">
+                        <h3 class="item-title">Graphic Design</h3>
+                        <p>Tingkatkan branding produk Anda dengan menunjukkan identitas brand Anda melalui ciri khas
+                            visual yang menarik, mudah dikenali dan diingat.</p>
+                        <ul>
+                            <li>Eksklusif dan professional</li>
+                            <li>Style design fresh dan up-to-date</li>
+                            <li>File master lengkap & resolusi tinggi</li>
+                        </ul>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="section-item">
+                        <h3 class="item-title">Content Creator</h3>
+                        <p>Bangun citra brand yang positif dan tingkatkan kepercayaan publik melalui tampilan foto dan
+                            video yang berkualitas dan dapat mengkomunikasikan value produk atau layanan Anda.</p>
+                        <ul>
+                            <li>Peralatan Serba Canggih</li>
+                            <li>Professional Final Editing</li>
+                            <li>Professional model / talent</li>
+                            <li>Fresh & creative concept</li>
+                        </ul>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="section-item">
+                        <h3 class="item-title">Social Media Management</h3>
+                        <p>Percayakan social media management anda pada ahlinya. Hemat waktu, hemat biaya, Anda 100%
+                            fokus mengurus bisnis, kamu urus social media anda.</p>
+                        <ul>
+                            <li>Interaksi meningkat secara organik</li>
+                            <li>Fresh konten setiap minggu</li>
+                            <li>Bisa request konsep konten</li>
+                        </ul>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-old">
+        <div class="container">
+            <h2 class="section-title-2">Our Packages Website</h2>
+            <p class="section-desc">Choose from our affordable and customizable website development package.</p>
+            <div class="row g-4 section-items">
+                <div class="col-4">
+                    <div class="section-item">
+                        <h3 class="item-title">Website & Blog</h3>
+                        <p class="item-price">Mulai Dari<br><span>Rp. 4.999.999</span></p>
+                        <ul>
+                            <li>Free domain 1 tahun</li>
+                            <li>7 Halaman Awal (landing page, Profile, Content, Admin Dashboard)</li>
+                            <li>Gratis 5 Email Bisnis</li>
+                            <li>Free SSL certificate (https)</li>
+                            <li>2x Revisi Konten</li>
+                            <li>Gratis Setup Google Analytics</li>
+                            <li>Website Dinamis</li>
+                            <li>Free support 1 bulan</li>
+                        </ul>
+                        <a href="#" class="btn">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="section-item">
+                        <h3 class="item-title">Website E-Learning</h3>
+                        <p class="item-price">Mulai Dari<br><span>Rp. 9.999.999</span></p>
+                        <ul>
+                            <li>Free domain 1 tahun</li>
+                            <li>15 Halaman Awal (Landing page, Profile, Content, Admin dashboard, List Course, Q&A,
+                                Halaman khusus sesuai syarat dan ketentuan)</li>
+                            <li>Gratis 10 Email Bisnis</li>
+                            <li>Free SSL certificate (https)</li>
+                            <li>2x Revisi Konten</li>
+                            <li>Gratis Setup Google Analytics</li>
+                            <li>Website Dinamis</li>
+                            <li>Free support 1 bulan</li>
+                            <li>Email Broadcasting</li>
+                            <li>Support Payment</li>
+                        </ul>
+                        <a href="#" class="btn">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="section-item">
+                        <h3 class="item-title">Online Shop/ e-commers</h3>
+                        <p class="item-price">Mulai Dari<br><span>Rp. 14.999.999</span></p>
+                        <ul>
+                            <li>Free domain 1 tahun</li>
+                            <li>Kapasitas Hosting 20 GB</li>
+                            <li>15 Halaman Awal (Landing page, Profile, Content, Admin dashboard, Shopping list)</li>
+                            <li>Free SSL certificate (https)</li>
+                            <li>3x Revisi Konten</li>
+                            <li>Gratis Setup Google Analytics</li>
+                            <li>Live Chat</li>
+                            <li>Website Dinamis</li>
+                            <li>Free Support payment</li>
+                            <li>Free support 1 bulan</li>
+                            <li>Email Broadcasting</li>
+                            <li>Support Payment</li>
+                            <li>Management Website</li>
+                        </ul>
+                        <a href="#" class="btn">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="section-item">
+                        <h3 class="item-title">Website Administrasi</h3>
+                        <p class="item-price">Mulai Dari<br><span>Rp. 6.999.999</span></p>
+                        <ul>
+                            <li>Free domain 1 tahun</li>
+                            <li>5 Halaman Awal (Customize)</li>
+                            <li>Gratis 7 Email Bisnis</li>
+                            <li>Free SSL certificate (https)</li>
+                            <li>2x Revisi Konten</li>
+                            <li>Website Dinamis</li>
+                            <li>Free support 1 bulan</li>
+                            <li>Email Broadcasting</li>
+                        </ul>
+                        <a href="#" class="btn">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-even">
+        <div class="container">
+            <h2 class="section-title-2">Our Packages Mobile Apps</h2>
+            <p class="section-desc">Choose from our affordable and customizable mobile apps packages.</p>
+            <div class="row g-4 section-items">
+                <div class="col-4">
+                    <div class="section-item">
+                        <h3 class="item-title bg-title">Website</h3>
+                        <p class="item-desc">Konversi website anda ke dalam sebuah aplikasi webview android.</p>
+                        <p class="font-bold item-price">Harga Mulai<br><br><span>Rp. 3.999.999</span><br><span
+                                class="platform">(Aplikasi Android)</span></p>
+                        <a href="#" class="btn bg-btn">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="section-item">
+                        <h3 class="item-title bg-title">Toko Online & Booking</h3>
+                        <p class="item-desc">Aplikasi toko online, marketplace, grocery, online shop, dsb untuk android
+                        </p>
+                        <p class="font-bold item-price">Harga Mulai<br><br><span>Rp. 3.999.999</span><br><span
+                                class="platform">(Aplikasi Android)</span></p>
+                        <a href="#" class="btn bg-btn">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-old">
+        <div class="container">
+            <h2 class="section-title-2">Our Packages Graphics Design</h2>
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-8">
+                        <h3>Jasa Design Branding</h3>
+                        <p class="item-single">Proses menerjemahkan nilai yang dimiliki suatu brand menjadi sebuah
+                            identitas yang kuat, baik
+                            secara verbal maupun visual.</p>
+                        <ul class="item-single-list">
+                            <li>Design Logo</li>
+                            <li>Design Brand Book / Catalog Produk</li>
+                            <li>Design Company Profile</li>
+                            <li> Design Merchandise / Stationary</li>
+                            <li> Design Kartu Nama</li>
+                            <li> Design Kop Surat</li>
+                            <li>Design Map / Amplop</li>
+                            <li> Design Label Produk</li>
+                        </ul>
+                        <p class="item-price-single">Harga Mulai Rp. 1.999.999</p>
+                        <a href="" class="btn item-single-btn">Pesan Sekarang</a>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-even">
+        <div class="container">
+            <h2 class="section-title-2">Our Packages Graphics Design</h2>
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-8">
+                        <h3>Jasa Design Digital Ads</h3>
+                        <p class="item-single">Jasa design untuk kebutuhan digital marketing untuk social media post dan
+                            online ads.</p>
+                        <ul class="item-single-list">
+                            <li>Design banner iklan google ads (Animated Banner)</li>
+                            <li>Desain iklan facebook & instagram</li>
+                            <li>Jasa desain banner website</li>
+                        </ul>
+                        <p class="item-price-single">Harga Mulai Rp. 250.000</p>
+                        <a href="" class="btn item-single-btn">Pesan Sekarang</a>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-old">
+        <div class="container">
+            <h2 class="section-title-2">Our Packages Graphics Design</h2>
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-8">
+                        <h3>Jasa Design Social Media</h3>
+                        <p class="item-single">Membantu mengkomunikasikan promosi bisnis anda di media digital</p>
+                        <ul class="item-single-list">
+                            <li>Jasa desain konten instagram</li>
+                            <li>Jasa desain story instagram</li>
+                            <li>Jasa desain banner facebook</li>
+                        </ul>
+                        <p class="item-price-single">Harga Mulai Rp. 80.000</p>
+                        <a href="" class="btn item-single-btn">Pesan Sekarang</a>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-even">
+        <div class="container">
+            <h2 class="section-title-2 font-300">Our Packages Content Creator</h2>
+            <div class="row g-4 mt-1">
+                <div class="col-4">
+                    <div class="section-item no-border">
+                        <h4>Foto Produk Website / e-commers</h4>
+                        <p class="item-price-2">Rp. 1.350.000</p>
+                        <ul class="list-item">
+                            <li>20 foto catalog</li>
+                            <li>10 foto flatlay</li>
+                            <li>Background clean / 1 warna</li>
+                            <li>Final edit & touch up</li>
+                            <li>High resolution photo</li>
+                            <li>Include properti pendukung</li>
+                            <li>3 - 5 hari kerja</li>
+                        </ul>
+                        <a href="#" class="btn item-single-btn mt-4">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="section-item no-border">
+                        <h4>Foto Produk Untuk Sosmed</h4>
+                        <p class="item-price-2">Rp. 2.090.000</p>
+                        <ul class="list-item">
+                            <li>20 foto flatlay</li>
+                            <li>10 foto lifestyle</li>
+                            <li>Background creative</li>
+                            <li>Final edit & touch up</li>
+                            <li>High resolution photo</li>
+                            <li>Ide tema & Konsep</li>
+                            <li>3 - 5 hari kerja</li>
+                        </ul>
+                        <a href="#" class="btn item-single-btn mt-4">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="section-item no-border">
+                        <h4>Foto Untuk Company Profile Perusahaan</h4>
+                        <p class="item-price-2">Rp. 3.500.000</p>
+                        <ul class="list-item">
+                            <li>30 foto gedung perusaan, produk dan tim</li>
+                            <li>Final edit & touch up</li>
+                            <li>High resolution photo</li>
+                            <li>Ide tema & Konsep</li>
+                            <li>3 - 5 hari kerja</li>
+                        </ul>
+                        <a href="#" class="btn item-single-btn mt-4">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-old">
+        <div class="container">
+            <h2 class="section-title-3 font-300 text-center">Our Packages Social Media Management<br>(instagram)</h2>
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="header-item">
+                        Paket Social Media Management Instagram
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="header-item">
+                        Halft Plan<br>
+                        Rp.<br>
+                        3.000.000/Month
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="header-item">
+                        Full Plan<br>
+                        Rp.<br>
+                        5.500.000/Month
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="header-item">
+                        Advance Plan<br>
+                        Rp.<br>
+                        7.000.000/Month
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

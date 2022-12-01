@@ -190,8 +190,15 @@ section .section-item{
 }
 
 .header-item{
-    height: 90px;
+    height: 110px;
     border-bottom: 2px solid #ffffff;
+    position: relative;
+}
+
+.align-bottom{
+    position: absolute;
+    left: 0;
+    bottom: 15px;
 }
 
 .col-3{
@@ -201,4 +208,63 @@ section .section-item{
 .col-3 + .col-3 .header-item{
     text-align: center;
     padding: 0 10px;
+}
+
+.ig-offering{
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.ig-rp{
+    font-weight: 400;
+}
+
+.ig-items{
+    font-size: 1.2rem;
+}
+
+.ig-items .col-3{
+    padding: 0 3px;
+    padding-top: 15px;
+}
+
+.ig-items .col-3 div{
+    height: 38px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.ig-item-offering{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.ig-item-btn{
+    border: none !important; 
+}
+
+.ig-item-btn a.btn{
+    color: var(--primary-color);
+    background-color: #FFFFFF;
+    font-weight: 600;
+}
+
+.my-quality{
+    font-size: 2.7rem;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 3px;
+}
+
+.my-quality + a{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.qna{
+    font-size: 3.8rem;
+}
+
+.address{
+    font-size: 1.6rem;
 }

@@ -229,7 +229,7 @@ section .section-item{
 }
 
 .ig-items .col-3 div{
-    height: 38px;
+    height: 44px;
     padding-bottom: 4px;
     border-bottom: 1px solid #FFFFFF;
 }
@@ -237,6 +237,9 @@ section .section-item{
 .ig-item-offering{
     text-align: center;
     font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ig-item-btn{
@@ -267,4 +270,24 @@ section .section-item{
 
 .address{
     font-size: 1.6rem;
+}
+
+.oval{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.oval + .oval{
+    margin-left: 5px;
+}
+
+.oval img{
+    stroke: var(--primary-color);
+    width: 20px;
 }

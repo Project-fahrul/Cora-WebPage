@@ -291,3 +291,7 @@ section .section-item{
     stroke: var(--primary-color);
     width: 20px;
 }
+
+.footer{
+    padding: 250px 0;
+}
